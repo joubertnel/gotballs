@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="gotballs.css"/>
+  </head>
+  <body>
+    
+    <script type="text/x-handlebars" id="handlebars-template" data-template-name="ball_area">
+      {{#each Demo.balls}}
+       <div class="ball-view">
+         <div class="ball"  {{bindAttr style="style"}}>
+         {{content}}
+         </div>
+       </div>
+      {{/each}}
+    </script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="d3.min.js"></script>
+    <script src="http://cloud.github.com/downloads/emberjs/ember.js/ember-0.9.5.min.js"></script>
+    <script src="gotballs.js"></script>
+  </body>
+</html>
