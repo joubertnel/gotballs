@@ -43,9 +43,6 @@ Demo.Ball = Em.Object.extend({
   // Methods
   tick: function() {
     var count = this.incrementProperty('count');
-    var top = Math.sin(count/10) * 10;
-    var left = Math.cos(count/10) * 10;
-    var color = count % 255;
     this.set('top', Math.sin(count / 10) * 10);
     this.set('left', Math.cos(count / 10) * 10);
     this.set('color', count % 255);
